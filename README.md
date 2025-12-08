@@ -1,1 +1,18 @@
 # nano-ruber
+
+A Ruby TUI editor for `/etc/nanorc` and `~/.nanorc` with tabs, backups, audit trail, and diff preview.
+
+## Features
+- Tabs for System/User nanorc
+- Save, reload, quit guard
+- Backup on save
+- JSONL audit events
+- Diff preview (requires `diff-lcs`)
+- CI via GitHub Actions
+
+## Run
+```bash
+bundle install
+bundle exec bin/nano-ruber
+sudo bundle exec bin/nano-ruber  # for system file
+```

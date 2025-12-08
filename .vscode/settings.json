@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "rebornix.Ruby",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true
+}

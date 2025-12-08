@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.rb diff=ruby
+*.md diff=markdown
