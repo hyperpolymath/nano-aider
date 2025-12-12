@@ -33,3 +33,7 @@ When asked to add npm packages, use Deno alternatives:
 - No MD5/SHA1 for security (use SHA256+)
 - HTTPS only (no HTTP URLs)
 - No hardcoded secrets
+
+## ⚠️ MIGRATION REQUIRED
+Ruby TUI code must be migrated to Ada/SPARK.
+See `.migration/RUBY_TO_ADA_SPARK.md`
