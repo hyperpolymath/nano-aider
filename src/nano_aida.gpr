@@ -1,0 +1,39 @@
+-- SPDX-License-Identifier: AGPL-3.0-or-later
+-- SPDX-FileCopyrightText: 2025 Jonathan D.A. Jewell
+--
+-- nano_aida.gpr - GNAT Project File for nano-aida
+
+project Nano_Aida is
+
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   for Exec_Dir use "bin";
+   for Main use ("nano_aida.adb");
+
+   type Build_Type is ("Debug", "Release", "Validation");
+   Build : Build_Type := external ("NANO_AIDA_BUILD", "Debug");
+
+   package Compiler is
+      case Build is
+         when "Debug" =>
+            for Default_Switches ("Ada") use
+              ("-g", "-O0", "-gnata", "-gnatwa", "-gnatVa", "-gnatyg");
+         when "Release" =>
+            for Default_Switches ("Ada") use
+              ("-O2", "-gnatn", "-gnatp");
+         when "Validation" =>
+            for Default_Switches ("Ada") use
+              ("-g", "-O0", "-gnata", "-gnatwa", "-gnatVa", "-gnatyg",
+               "-gnato", "-fstack-check");
+      end case;
+   end Compiler;
+
+   package Binder is
+      for Default_Switches ("Ada") use ("-E");
+   end Binder;
+
+   package Prove is
+      for Proof_Switches ("Ada") use ("--level=2", "--prover=all");
+   end Prove;
+
+end Nano_Aida;

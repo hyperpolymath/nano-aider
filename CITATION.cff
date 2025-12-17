@@ -1,9 +1,9 @@
-# CITATION.cff - Citation File Format for nano-ruber
+# CITATION.cff - Citation File Format for nano-aida
 # https://citation-file-format.github.io/
 # SPDX-License-Identifier: AGPL-3.0-or-later OR LicenseRef-Palimpsest-0.5
 
 cff-version: 1.2.0
-title: "nano-ruber"
+title: "nano-aida"
 message: "If you use this software, please cite it as below."
 type: software
 authors:
@@ -12,13 +12,17 @@ authors:
     alias: "hyperpolymath"
     email: "hyperpolymath@proton.me"
     affiliation: "Rhodium Standard / Independent Researcher"
-repository-code: "https://github.com/hyperpolymath/nano-ruber"
-url: "https://rhodium.sh/projects/nano-ruber"
-abstract: "RSR-compliant project"
+repository-code: "https://github.com/hyperpolymath/nano-aida"
+url: "https://rhodium.sh/projects/nano-aida"
+abstract: "Ada/SPARK TUI application with formal verification - RSR compliant"
 keywords:
   - RSR
   - rhodium-standard
+  - Ada
+  - SPARK
+  - formal-verification
+  - TUI
 license: "AGPL-3.0-or-later"
-license-url: "https://github.com/hyperpolymath/nano-ruber/blob/main/LICENSE.txt"
-version: "0.1.0"
-date-released: "2025-12-10"
+license-url: "https://github.com/hyperpolymath/nano-aida/blob/main/LICENSE.txt"
+version: "0.2.0"
+date-released: "2025-12-17"

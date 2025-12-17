@@ -1,29 +1,34 @@
-# nano-ruber - Development Tasks
+# nano-aida - Development Tasks
 set shell := ["bash", "-uc"]
 set dotenv-load := true
 
-project := "nano-ruber"
+project := "nano-aida"
 
 # Show all recipes
 default:
     @just --list --unsorted
 
-# Build
+# Build with Alire
 build:
-    @echo "TODO: Add build command"
+    cd src && alr build
 
-# Test
+# Run tests
 test:
-    @echo "TODO: Add test command"
+    cd src && alr build && ./bin/nano_aida --test
 
-# Clean
+# Clean build artifacts
 clean:
-    @echo "TODO: Add clean command"
+    cd src && alr clean
+    rm -rf src/obj src/bin
 
-# Format
+# Format Ada code
 fmt:
-    @echo "TODO: Add format command"
+    @echo "Run: gnatpp -rnb src/*.ad?"
+
+# Run SPARK prover
+prove:
+    cd src && alr exec -- gnatprove -P nano_aida.gpr --level=2
 
 # Lint
 lint:
-    @echo "TODO: Add lint command"
+    cd src && alr exec -- gnatcheck -P nano_aida.gpr

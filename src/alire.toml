@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: 2025 Jonathan D.A. Jewell
+
+[general]
+name = "nano_aida"
+description = "Ada/SPARK TUI application with formal verification"
+version = "0.2.0"
+
+authors = ["Jonathan D.A. Jewell"]
+maintainers = ["hyperpolymath <hyperpolymath@proton.me>"]
+maintainers-logins = ["hyperpolymath"]
+licenses = "AGPL-3.0-or-later"
+website = "https://github.com/hyperpolymath/nano-aida"
+tags = ["tui", "terminal", "curses", "spark", "formal-verification"]
+
+executables = ["nano_aida"]
+
+[[depends-on]]
+ncursesada = "^6.3.0"
+
+[build-profiles]
+nano_aida = "validation"
+
+[gpr-externals]
+NANO_AIDA_BUILD = ["Debug", "Release", "Validation"]
+
+[gpr-set-externals]
+NANO_AIDA_BUILD = "Validation"

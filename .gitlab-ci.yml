@@ -1,15 +1,37 @@
 stages:
+  - build
   - test
   - security
 
 variables:
-  RUBY_VERSION: "3.2"
+  GNAT_VERSION: "12"
+
+build:
+  stage: build
+  image: ubuntu:22.04
+  before_script:
+    - apt-get update
+    - apt-get install -y gnat gprbuild libncurses-dev wget unzip
+    - wget -q https://github.com/alire-project/alire/releases/download/v2.0.1/alr-2.0.1-bin-x86_64-linux.zip
+    - unzip -q alr-2.0.1-bin-x86_64-linux.zip
+    - mv bin/alr /usr/local/bin/
+  script:
+    - cd src && alr --non-interactive build
+  artifacts:
+    paths:
+      - src/bin/
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
 
 test:
   stage: test
-  image: ruby:${RUBY_VERSION}
+  image: ubuntu:22.04
+  needs: ["build"]
+  before_script:
+    - apt-get update
+    - apt-get install -y libncurses6
   script:
-    - ./ci-scripts/test.sh
+    - ./src/bin/nano_aida --test
   rules:
     - if: $CI_PIPELINE_SOURCE == "push"
 

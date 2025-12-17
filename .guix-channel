@@ -1,7 +1,7 @@
-;; nano-ruber - Guix Channel
+;; nano-aida - Guix Channel
 ;; Add to ~/.config/guix/channels.scm
 
 (channel
  (version 0)
- (url "https://github.com/hyperpolymath/nano-ruber")
+ (url "https://github.com/hyperpolymath/nano-aida")
  (branch "main"))

@@ -1,12 +1,12 @@
 ;; SPDX-License-Identifier: AGPL-3.0-or-later
 ;; SPDX-FileCopyrightText: 2025 Jonathan D.A. Jewell
 ;; ECOSYSTEM.scm - Project Ecosystem Relationships
-;; nano-ruber
+;; nano-aida
 ;; Reference: https://github.com/hyperpolymath/ECOSYSTEM.scm
 
 (ecosystem
   (version "1.0.0")
-  (name "nano-ruber")
+  (name "nano-aida")
   (type "project")
   (purpose "Jonathan D.A. Jewell <jonathan.jewell@gmail.com>")
 

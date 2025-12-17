@@ -2,10 +2,10 @@
 ;; SPDX-FileCopyrightText: 2025 Jonathan D.A. Jewell
 
 ;;; META.scm — Architecture Decisions and Development Practices
-;;; nano-ruber
+;;; nano-aida
 ;;; Reference: https://github.com/hyperpolymath/META.scm
 
-(define-module (nano-ruber meta)
+(define-module (nano-aida meta)
   #:export (architecture-decisions
             development-practices
             design-rationale))
@@ -35,7 +35,7 @@
 
 (define development-practices
   '((code-style
-     (languages . ("Just" "Ruby" "Scheme" "Shell"))
+     (languages . ("Just" "Ada" "SPARK" "Scheme" "Shell"))
      (formatter . "auto-detect")
      (linter . "auto-detect")
      (line-length . 100)

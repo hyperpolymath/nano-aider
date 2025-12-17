@@ -1,15 +1,15 @@
-= nano-ruber
+= nano-aida
 Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
 :toc: macro
 :icons: font
 :source-highlighter: rouge
 :experimental:
-:url-github: https://github.com/hyperpolymath/nano-ruber
-:url-gitlab: https://gitlab.com/hyperpolymath/nano-ruber
-:url-bitbucket: https://bitbucket.org/hyperpolymath/nano-ruber
-:url-codeberg: https://codeberg.org/hyperpolymath/nano-ruber
+:url-github: https://github.com/hyperpolymath/nano-aida
+:url-gitlab: https://gitlab.com/hyperpolymath/nano-aida
+:url-bitbucket: https://bitbucket.org/hyperpolymath/nano-aida
+:url-codeberg: https://codeberg.org/hyperpolymath/nano-aida
 
-Nano-scale rubber band simulation engine
+Ada/SPARK TUI application with formal verification
 
 image:https://img.shields.io/badge/RSR-Certified-gold[RSR Certified,link=https://github.com/hyperpolymath/rhodium-standard-repositories]
 image:https://img.shields.io/badge/License-AGPL%20v3-blue[License]

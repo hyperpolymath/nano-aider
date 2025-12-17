@@ -3,19 +3,22 @@
   xmlns="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <title>nano-ruber</title>
+  <title>nano-aida</title>
   <creator>Jonathan D.A. Jewell</creator>
   <subject>software-development</subject>
   <subject>RSR</subject>
   <subject>Rhodium Standard</subject>
-  <description>Nano-scale rubber band simulation engine</description>
+  <subject>Ada</subject>
+  <subject>SPARK</subject>
+  <subject>formal-verification</subject>
+  <description>Ada/SPARK TUI application with formal verification</description>
   <publisher>Rhodium Standard</publisher>
   <contributor>Jonathan D.A. Jewell</contributor>
   <date>2025</date>
   <type>Software</type>
   <format>application/octet-stream</format>
-  <identifier>https://github.com/hyperpolymath/nano-ruber</identifier>
-  <source>https://github.com/hyperpolymath/nano-ruber</source>
+  <identifier>https://github.com/hyperpolymath/nano-aida</identifier>
+  <source>https://github.com/hyperpolymath/nano-aida</source>
   <language>en</language>
   <relation>https://rhodium.sh</relation>
   <rights>AGPL-3.0-or-later OR LicenseRef-Palimpsest-0.5</rights>
